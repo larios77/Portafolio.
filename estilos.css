@@ -1,0 +1,249 @@
+*{
+	margin: 0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+
+body{
+	font-family:  'Roboto', sans-serif;
+	font-size: 16px;
+	background:#f2f2f2;
+}
+.container{
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+/*------header-------*/
+.header{
+	background-image: url(img/bg-min.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	max-height: 600px;
+}
+.container .menu{
+	display:block;
+	padding: 0 20px;
+	margin: 40px 0;
+	display:flex;
+	justify-content: space-around;
+
+}
+.container .menu li{
+	list-style: none;
+}
+.container .menu a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+}
+.container .menu a:hover{
+	border-bottom:1px solid #fff;
+}
+.container .borde{
+	border:1px solid rgba(255,255,255,.5);
+	width: 30%;
+	margin: 200px auto;
+}
+.container .titulo{
+	text-align: center;
+	color: #fff;
+	padding: 10px 0;
+}
+.container .sub-titulo{
+	text-align: center;
+	color: #fff;
+	padding-bottom: 10px;
+}
+/*-----perfil--------*/
+
+.perfil{
+	margin-top: -60px; 
+	object-fit: cover;
+	overflow: visible;
+	display: flex;
+	justify-content: center;
+}
+.perfil img{
+	vertical-align: top;
+	border-radius: 50%;
+	border:5px solid rgba(255,255,255,0.2);
+}
+/*-------post--------*/
+
+.post {
+	width: 90%;
+	margin: 0 auto;
+}
+.post .titulo{
+	text-align: center;
+	color: #2E4053;
+	padding:20px 0;
+	font-size: 35px;
+	border-bottom: 3px solid #2E4053;
+}
+.container-img {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	border-bottom: 3px solid #2E4053;
+}
+
+.post .container-img img{
+	height: 250px;
+	padding: 10px;
+	object-fit: cover;
+}
+.post .container-img img:hover{
+	border:7px solid #f2f2f2;
+}
+/*-----conocimientos----*/
+.contenedor{
+	width: 100%;
+	background: #f2f2f2;
+}
+ .contenedor .titulo{
+	text-align: center;
+	color: #000;
+	padding:20px 0;
+	font-size: 35px;
+}
+.contenedor .titulo2{
+	text-align: center;
+	color: #fff;
+	padding:20px 0;
+	font-size: 35px;
+}
+.contenedor .conocimientos{
+	width: 50%;
+	background:#2E4053;
+	margin:0 auto;
+	margin-bottom: 40px;
+	border-radius: 10px;
+	box-shadow: 9px 9px 8px;
+}
+.contenedor .conocimientos img{
+	width: 190px;
+	object-fit: cover;
+	margin:0 72px 20px 72px;
+}
+.contenedor .conocimientos .color1:hover{
+	background: #DC7633;
+	border-radius: 10px;
+}
+.contenedor .conocimientos .color2:hover{
+	background: #2E86C1;
+	border-radius: 10px;
+}
+
+
+/*-------aside-------*/
+.barra-lateral{
+	width: 100%;
+	background: #808B96;
+}
+.container .formulario-contacto .titulo{
+	text-align: center;
+	color: #fff;
+	padding:20px 0;
+	font-size: 33px;
+}
+.container .formulario-contacto{
+	text-align: center;
+	margin: 20px 0;
+}
+.container .formulario-contacto .form-input{
+	width: 70%;
+	padding: 5px 0;
+	margin: 10px 0;
+	border:none;
+	border-radius: 10px;
+	outline: none;
+	text-align: center;
+}
+.container .formulario-contacto .form-btn{
+	width: 40%;
+	background: #2E86C1;
+	color:#fff;
+	border:none;
+	outline: none;
+	font-weight: 700;
+	padding: 5px 0;
+	margin: 20px 0;
+	border-radius: 10px;
+	border-bottom: 1px solid #fff;	
+}
+.container .formulario-contacto .form-btn:hover{
+	background: #5DADE2;
+
+}
+
+/*-------footer------*/
+.redes {
+	width: 100%;
+	padding: 10px 0;
+	background: #2E4053;
+	overflow: hidden;
+}
+.redes .container{
+	text-align: center;
+	color: #fff;
+}
+.redes .container a{
+	text-decoration: none;
+	font-size: 30px;
+	display: inline-block;
+	padding: 0px 8px;
+	margin: 10px 70px 10px 70px; 
+	color: #fff;
+}
+.redes .twitter:hover{
+	background: #1da1f2; 
+	border-radius: 3px;
+}
+.redes .youtube:hover{
+	background: #cd201f;
+	border-radius: 3px;
+}
+.redes .facebook:hover{
+	background: #3b5998;
+	border-radius: 3px;
+}
+.redes .instagram:hover{
+	background: #666666;
+	border-radius: 3px;
+}
+
+.redes .container .creador	{
+	font-size: 18px;
+}
+@media screen and (max-width: 1000px){
+	.post .container-img{
+		display: flex;
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 768px){
+	.container .borde {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 425px){
+	.container .menu{
+		margin-top: 20px;
+	}
+}
+@media screen and (max-width: 375px){
+	.container .menu{
+		display: flex;
+		flex-direction: column;
+		background: rgba(255,255,255,.6);
+		border-radius: 5px;
+	}
+	.container .menu a{
+		color: #000; 
+	}
+}
