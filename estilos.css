@@ -7,10 +7,10 @@
 body{
 	font-family:  'Roboto', sans-serif;
 	font-size: 16px;
-	background:#f2f2f2;
+	background:#ECF0F1;
 }
 .container{
-	width: 90%;
+	width: 90%;	
 	max-width: 1000px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -22,11 +22,11 @@ body{
 	background-position: center;
 	background-size: cover;
 	max-height: 600px;
+	position: relative;
 }
 .container .menu{
 	display:block;
-	padding: 0 20px;
-	margin: 40px 0;
+	margin-top: 45px;
 	display:flex;
 	justify-content: space-around;
 
@@ -57,12 +57,54 @@ body{
 	color: #fff;
 	padding-bottom: 10px;
 }
-/*-----perfil--------*/
-
-.perfil{
-	margin-top: -60px; 
+/*----wave-----*/
+.wave{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;	
+}
+/*---barra-navegacion---*/
+.redes-bar{
+	display: flex;
+	flex-direction: column;
+	top: 280px;
+	position: fixed;
+	z-index: 2000;
+}
+.redes-bar a{
+	color:#fff;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 23px;
+	padding: 6px;
+}
+.redes-bar a:hover{
+	background: #000;	
+}
+.twitter{
+	background: #1da1f2; 
+	border-radius: 0 7px 0 0;
+}
+.youtube{
+	background: #cd201f;
+}
+.facebook{
+	background: #3b5998;
+}
+.instagram{
+	background: #666666;
+	border-radius: 0 0 7px 0;
+}
+/*-----acerca-de-----*/
+.acerca-de{
+	width: 100%;
+	height: 300px;
+	line-height: 300px;
+	background: #fff;
+}
+.perfil{ 
 	object-fit: cover;
-	overflow: visible;
 	display: flex;
 	justify-content: center;
 }
@@ -71,6 +113,22 @@ body{
 	border-radius: 50%;
 	border:5px solid rgba(255,255,255,0.2);
 }
+.acerca-de .titulo{
+	text-align: center;
+	color:#2E4053;
+	padding:20px 0;
+	font-size: 35px;
+	line-height: 35px;
+}
+.acerca-de .Descripcion{
+	text-align: center;
+	font-size: 20px;
+	line-height: 20px;
+}
+.acerca-de .orange{
+	color:#dd820d;
+}
+
 /*-------post--------*/
 
 .post {
@@ -98,12 +156,12 @@ body{
 	object-fit: cover;
 }
 .post .container-img img:hover{
-	border:7px solid #f2f2f2;
+	border:7px solid #ECF0F1;
 }
 /*-----conocimientos----*/
 .contenedor{
 	width: 100%;
-	background: #f2f2f2;
+
 }
  .contenedor .titulo{
 	text-align: center;
@@ -182,43 +240,37 @@ body{
 }
 
 /*-------footer------*/
-.redes {
+.footer {
 	width: 100%;
 	padding: 10px 0;
 	background: #2E4053;
 	overflow: hidden;
+	height: 90px;
+	line-height: 90px;
 }
-.redes .container{
+.footer .container{
 	text-align: center;
 	color: #fff;
 }
-.redes .container a{
-	text-decoration: none;
-	font-size: 30px;
-	display: inline-block;
-	padding: 0px 8px;
-	margin: 10px 70px 10px 70px; 
-	color: #fff;
+.footer .container .creador	{
+	font-size: 20px;
 }
-.redes .twitter:hover{
-	background: #1da1f2; 
-	border-radius: 3px;
+@media screen and (max-width: 1345px){
+	.contenedor .conocimientos{
+		width: 25%
+	}
+	 .conocimientos .color1 .color2{
+		display: flex;
+		flex-direction: row;
+	}
 }
-.redes .youtube:hover{
-	background: #cd201f;
-	border-radius: 3px;
-}
-.redes .facebook:hover{
-	background: #3b5998;
-	border-radius: 3px;
-}
-.redes .instagram:hover{
-	background: #666666;
-	border-radius: 3px;
-}
-
-.redes .container .creador	{
-	font-size: 18px;
+@media screen and (max-width: 1224px){
+	.contenedor .conocimientos{
+		width: 50%;
+	}
+	.container .borde {
+		width: 60%;
+	}
 }
 @media screen and (max-width: 1000px){
 	.post .container-img{
@@ -228,15 +280,13 @@ body{
 }
 @media screen and (max-width: 768px){
 	.container .borde {
-		width: 100%;
+		width: 60%;
+	}
+	.contenedor .conocimientos{
+		width: 50%;
 	}
 }
 @media screen and (max-width: 425px){
-	.container .menu{
-		margin-top: 20px;
-	}
-}
-@media screen and (max-width: 375px){
 	.container .menu{
 		display: flex;
 		flex-direction: column;
@@ -245,5 +295,22 @@ body{
 	}
 	.container .menu a{
 		color: #000; 
+	}
+	.wave{
+		display: none;
+	}
+
+	.contenedor .conocimientos{
+		width: 90%;
+	}
+}
+@media screen and (max-width: 375px){
+	.contenedor .conocimientos{
+		width: 90%;
+	}
+}
+@media screen and (max-width: 320px){
+	.contenedor .conocimientos{
+		width: 90%;
 	}
 }
