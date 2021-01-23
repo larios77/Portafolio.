@@ -284,6 +284,14 @@ body{
 	}
 	.contenedor .conocimientos{
 		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.contenedor .conocimientos img{
+		width: 150px;
+		text-align: center;
 	}
 }
 @media screen and (max-width: 425px){
@@ -293,6 +301,24 @@ body{
 		background: rgba(255,255,255,.6);
 		border-radius: 5px;
 	}
+	.acerca-de .titulo{
+		font-size: 28px;
+	}
+	.acerca-de .Descripcion{
+		font-size: 16px;
+	}
+	.post .titulo{
+		font-size: 28px;
+	}
+	.contenedor .titulo{
+		font-size: 28px;
+	}
+	.contenedor .titulo2{
+		font-size: 28px;
+	}
+	.barra-lateral .container .formulario-contacto .titulo{
+		font-size: 28px;
+	}
 	.container .menu a{
 		color: #000; 
 	}
@@ -301,16 +327,39 @@ body{
 	}
 
 	.contenedor .conocimientos{
-		width: 90%;
+		width: 40%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.contenedor .conocimientos img{
+		width: 100px;
+		text-align: center;
 	}
 }
 @media screen and (max-width: 375px){
 	.contenedor .conocimientos{
-		width: 90%;
+		width: 45%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.contenedor .conocimientos img{
+		width: 100px;
+		text-align: center;
 	}
 }
 @media screen and (max-width: 320px){
 	.contenedor .conocimientos{
-		width: 90%;
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
-}
+	.contenedor .conocimientos img{
+		width: 100px;
+		text-align: center;
+	}}
